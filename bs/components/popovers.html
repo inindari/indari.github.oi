@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <!-- Bootstrap CSS Offline -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>popovers</title>
+  </head>
+  <body> 
+    <h1>popovers</h1>
+
+<!-- Example: Enable popovers everywhere -->
+$(function () {
+    $('[data-toggle="popover"]').popover()
+  })
+
+  <!-- Four directions -->
+  <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Top popover">
+    Popover on top
+  </button>
+  <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Right popover">
+    Popover on right
+  </button>
+  <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Bottom popover">
+    Popover on bottom
+  </button>
+  <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Left popover">
+    Popover on left
+  </button>
+
+  <!-- Disabled elements -->
+  <span class="d-inline-block" data-toggle="popover" data-content="Disabled popover">
+    <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled>Disabled button</button>
+  </span>
+    <!-- Bootstrap js Offline -->
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery.slim.min.js"></script>
+
+  </body>
+</html>
